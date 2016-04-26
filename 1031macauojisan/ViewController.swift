@@ -3,7 +3,7 @@
 //  1031macauojisan
 //
 //  Created by 20150301 on 2015/10/31.
-//  Copyright © 2015年 YasuhiroSugisawa. All rights reserved.
+//  Copyright © 2015年 ******. All rights reserved.
 //
 
 import UIKit
@@ -12,8 +12,8 @@ import GoogleMobileAds
 class ViewController: UIViewController , GADBannerViewDelegate{
     
     // AdMob ID を入れてください
-    let AdMobID = "ca-app-pub-8390957284099917/6052815383"
-    let TEST_DEVICE_ID = "f8b5cd15da8f02822ab74d3e2aaaf7e1"
+    let AdMobID = "ca-app-pub-****************************"
+    let TEST_DEVICE_ID = "********************************"
     let AdMobTest:Bool = true
     let SimulatorTest:Bool = false    
     
