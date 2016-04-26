@@ -7,13 +7,48 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController , GADBannerViewDelegate{
+    
+    // AdMob ID を入れてください
+    let AdMobID = "ca-app-pub-8390957284099917/6052815383"
+    let TEST_DEVICE_ID = "f8b5cd15da8f02822ab74d3e2aaaf7e1"
+    let AdMobTest:Bool = true
+    let SimulatorTest:Bool = false    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var admobView: GADBannerView = GADBannerView()
+        admobView = GADBannerView(adSize:kGADAdSizeBanner)
+        admobView.frame.origin = CGPointMake(0, self.view.frame.size.height - admobView.frame.height)
+        
+        admobView.frame.size = CGSizeMake(self.view.frame.width, admobView.frame.height)
+        admobView.adUnitID = AdMobID
+        admobView.delegate = self
+        admobView.rootViewController = self
+        
+        let admobRequest:GADRequest = GADRequest()
+        
+        if AdMobTest {
+            if SimulatorTest {
+                admobRequest.testDevices = [kGADSimulatorID]
+            }
+            else {
+                admobRequest.testDevices = [TEST_DEVICE_ID]
+            }
+            
+        }
+        
+        admobView.loadRequest(admobRequest)
+        
+        self.view.addSubview(admobView)
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

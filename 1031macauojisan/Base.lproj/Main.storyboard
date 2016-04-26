@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_031macauojisan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,363 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="BOa-b6-ZnF">
+                                <rect key="frame" x="166" y="123" width="270" height="356"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YUK-hU-hqu">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="142"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I3U-sY-VKa">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="142"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="マカオおじさん のコピー.png" translatesAutoresizingMaskIntoConstraints="NO" id="xnl-AB-9Xd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="142"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="KCN-Z9-iSf"/>
+                                                            <constraint firstAttribute="height" constant="142" id="iA5-Sh-56K"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BpS-pI-DPD">
+                                                <rect key="frame" x="70" y="42" width="200" height="58"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="fukidashi o.png" translatesAutoresizingMaskIntoConstraints="NO" id="5tZ-gj-7gx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="58"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="6TW-Ee-azL"/>
+                                                            <constraint firstAttribute="height" constant="58" id="wLE-Ke-oTn"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="8Wy-KC-dw0"/>
+                                            <constraint firstAttribute="height" constant="142" id="LGq-gz-atN"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="WfL-yM-6Gz">
+                                        <rect key="frame" x="46" y="292" width="178" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBI-cY-sPg">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="7sz-xr-Xjb"/>
+                                                    <constraint firstAttribute="width" constant="64" id="QfG-20-fcO"/>
+                                                </constraints>
+                                                <state key="normal" image="yes256.png"/>
+                                                <connections>
+                                                    <segue destination="ha0-xb-vex" kind="presentation" modalTransitionStyle="crossDissolve" id="Iix-34-m7O"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cca-dg-mri">
+                                                <rect key="frame" x="114" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="awr-97-t7P"/>
+                                                    <constraint firstAttribute="height" constant="64" id="ysq-dT-qOb"/>
+                                                </constraints>
+                                                <state key="normal" image="no256.png"/>
+                                                <connections>
+                                                    <segue destination="hDe-Vc-nbQ" kind="presentation" modalTransitionStyle="crossDissolve" id="toN-Cy-T5Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="178" id="6dq-ix-hL7"/>
+                                            <constraint firstAttribute="height" constant="64" id="xVY-ix-KRt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="Crq-3a-b9s"/>
+                                    <constraint firstAttribute="height" constant="356" id="P7p-05-AHd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BOa-b6-ZnF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A2I-BS-gVt"/>
+                            <constraint firstItem="BOa-b6-ZnF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TFL-My-qKw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="293" y="387"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="niq-gj-oJI">
+            <objects>
+                <viewController id="ha0-xb-vex" customClass="SecondViewController" customModule="_031macauojisan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DTp-Wc-7ld"/>
+                        <viewControllerLayoutGuide type="bottom" id="utp-NR-SrR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B8e-vx-Yh5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="6mx-ye-0it">
+                                <rect key="frame" x="175" y="122" width="250" height="356"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rTL-vL-cJZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="142"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="マカオおじさん（修正）.png" translatesAutoresizingMaskIntoConstraints="NO" id="2mr-a4-Rve">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="142"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="124-KK-YkN"/>
+                                                    <constraint firstAttribute="height" constant="142" id="Eda-rd-RRW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="fukidashi m.png" translatesAutoresizingMaskIntoConstraints="NO" id="nzK-K5-fSU">
+                                                <rect key="frame" x="50" y="42" width="200" height="58"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="8IJ-O1-3RL"/>
+                                                    <constraint firstAttribute="width" constant="200" id="cBS-SA-ctB"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Us6-ud-Mwf"/>
+                                            <constraint firstAttribute="height" constant="142" id="zgq-YO-Cg0"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7R-8r-CBf">
+                                        <rect key="frame" x="93" y="292" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="UXq-FP-K0B"/>
+                                            <constraint firstAttribute="height" constant="64" id="qxw-ix-2rL"/>
+                                        </constraints>
+                                        <state key="normal" image="undo256.png"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="Jiu-l5-S9I"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Rsd-Ol-Pxi"/>
+                                    <constraint firstAttribute="height" constant="356" id="XIx-u2-G2y"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6mx-ye-0it" firstAttribute="centerX" secondItem="B8e-vx-Yh5" secondAttribute="centerX" id="6f1-k6-8zM"/>
+                            <constraint firstItem="6mx-ye-0it" firstAttribute="centerY" secondItem="B8e-vx-Yh5" secondAttribute="centerY" id="j0f-Fz-tzr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHV-dq-hsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="387"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="if5-9U-bZs">
+            <objects>
+                <viewController id="hDe-Vc-nbQ" customClass="ThirdViewController" customModule="_031macauojisan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="706-el-80D"/>
+                        <viewControllerLayoutGuide type="bottom" id="VBh-NB-Bi6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vv4-zr-jzM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y8L-9O-nVr">
+                                <rect key="frame" x="165" y="125" width="270" height="350"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q2e-a8-PdN">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="270"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aaaaa256.png" translatesAutoresizingMaskIntoConstraints="NO" id="d6q-GY-Kqe">
+                                                <rect key="frame" x="65" y="0.0" width="140" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="Pl0-VK-Bdw"/>
+                                                    <constraint firstAttribute="height" constant="140" id="dAd-oC-FfQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-3z-sF9">
+                                                <rect key="frame" x="0.0" y="140" width="270" height="130"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="270" id="MDT-cm-36V"/>
+                                                    <constraint firstAttribute="height" constant="130" id="TYc-rO-CMR"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="熱くなったら負けだ！！！">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="10" name="Osaka"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="19" defaultTabInterval="36">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="10" name="Osaka"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="19" defaultTabInterval="36">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="今回は特別に、嫌な流れを断ち切り気持ちを切り替えることができる最高の方法を教える。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="10" name="Osaka"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="19" defaultTabInterval="36">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="10" name="Osaka"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="19" defaultTabInterval="36">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="「冷静になる」ボタンを押してみろ。">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="10" name="Osaka"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="19" defaultTabInterval="36">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="H4b-qb-ay5"/>
+                                            <constraint firstAttribute="height" constant="270" id="Nuc-NA-ieZ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qw8-oa-OdW">
+                                        <rect key="frame" x="95" y="270" width="80" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWA-KJ-Qex">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Y6v-jz-m8j"/>
+                                                    <constraint firstAttribute="width" constant="80" id="tYS-Rf-mTU"/>
+                                                </constraints>
+                                                <state key="normal" image="reisei64 a.png"/>
+                                                <connections>
+                                                    <action selector="didTouchAddButton:" destination="hDe-Vc-nbQ" eventType="touchUpInside" id="k1O-x6-r1U"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="cMl-9B-cmd"/>
+                                    <constraint firstAttribute="height" constant="350" id="rEh-JM-cYR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y8L-9O-nVr" firstAttribute="centerX" secondItem="vv4-zr-jzM" secondAttribute="centerX" id="ExE-v0-u3B"/>
+                            <constraint firstItem="Y8L-9O-nVr" firstAttribute="centerY" secondItem="vv4-zr-jzM" secondAttribute="centerY" id="rKC-MP-dr4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EImageView" destination="d6q-GY-Kqe" id="GEd-Ps-El3"/>
+                        <outlet property="MojiTextView" destination="UGO-3z-sF9" id="uTJ-Op-MZl"/>
+                        <segue destination="UxF-96-lG2" kind="show" identifier="toMap" id="ah3-Uc-OY7"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toStart" id="QKk-x1-3vj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quq-se-yLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1681" y="387"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ZT6-sl-kfe">
+            <objects>
+                <viewController id="UxF-96-lG2" customClass="MapViewController" customModule="_031macauojisan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Svw-Ca-CIs"/>
+                        <viewControllerLayoutGuide type="bottom" id="rJ1-GB-oHh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g0i-g5-CSq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bes-pj-YD0">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UxF-96-lG2" id="J3H-WJ-zMc"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg4-4d-Rga">
+                                <rect key="frame" x="520" y="520" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ATZ-z9-SaV"/>
+                                    <constraint firstAttribute="height" constant="60" id="dsa-TD-pdM"/>
+                                </constraints>
+                                <state key="normal" image="undo256.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="CqK-v4-SyP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bes-pj-YD0" firstAttribute="centerY" secondItem="g0i-g5-CSq" secondAttribute="centerY" id="3Dd-BZ-hgy"/>
+                            <constraint firstItem="Bes-pj-YD0" firstAttribute="leading" secondItem="g0i-g5-CSq" secondAttribute="leading" id="8DD-Qw-OLL"/>
+                            <constraint firstItem="rJ1-GB-oHh" firstAttribute="top" secondItem="cg4-4d-Rga" secondAttribute="bottom" constant="20" id="CVA-YV-WAF"/>
+                            <constraint firstItem="Bes-pj-YD0" firstAttribute="top" secondItem="Svw-Ca-CIs" secondAttribute="bottom" id="FHk-gN-uzY"/>
+                            <constraint firstItem="cg4-4d-Rga" firstAttribute="trailing" secondItem="g0i-g5-CSq" secondAttribute="trailingMargin" id="TdW-9B-Qh1"/>
+                            <constraint firstItem="Bes-pj-YD0" firstAttribute="centerX" secondItem="g0i-g5-CSq" secondAttribute="centerX" id="Zrm-xp-7jL"/>
+                            <constraint firstItem="rJ1-GB-oHh" firstAttribute="top" secondItem="Bes-pj-YD0" secondAttribute="bottom" id="bw8-kW-2U5"/>
+                            <constraint firstAttribute="trailing" secondItem="Bes-pj-YD0" secondAttribute="trailing" id="qc7-EY-pty"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Bes-pj-YD0" id="70r-vA-3sr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEn-hS-Hr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2359" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aaaaa256.png" width="256" height="256"/>
+        <image name="fukidashi m.png" width="200" height="58"/>
+        <image name="fukidashi o.png" width="200" height="58"/>
+        <image name="no256.png" width="256" height="256"/>
+        <image name="reisei64 a.png" width="100" height="100"/>
+        <image name="undo256.png" width="256" height="256"/>
+        <image name="yes256.png" width="256" height="256"/>
+        <image name="マカオおじさん のコピー.png" width="50" height="142"/>
+        <image name="マカオおじさん（修正）.png" width="50" height="142"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CqK-v4-SyP"/>
+    </inferredMetricsTieBreakers>
 </document>
