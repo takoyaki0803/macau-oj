@@ -4,7 +4,7 @@
 //  1031macauojisan
 //
 //  Created by 20150301 on 4/2/16.
-//  Copyright © 2016 YasuhiroSugisawa. All rights reserved.
+//  Copyright © 2016 ******. All rights reserved.
 //
 
 import UIKit
@@ -45,23 +45,9 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(false)
         
-        ///通知を受け取る側///
-        //initなどでNSNotification登録
-        //NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MapViewController.start) ,name: "dummy", object: nil)
-        
-        
-        
-        //インスタンスプロパティの`valueToReceive`に値が入っているので、それをそのまま使うだけ
+
         chizu(valueToReceive)
     }
-    
-        //関数で受け取った時のリアクションを定義
-        //func start(notification: NSNotification) {
-            //if let userInfo = notification.userInfo {
-                //let result = userInfo["value"]! as! Int
-                //print("受信した数値：\(result)")
-    
-        //let result = 47　←47番が表示される。47番以外は警告表示となる。（▲黄色）
     
     func chizu(result: Int) {
         
@@ -77,10 +63,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
             self.mapView.setRegion(region, animated: true)
             //ピンを表示する
             let annotation = MKPointAnnotation()
-            //重複のため削除　annotation.coordinate = CLLocationCoordinate2DMake(22.153250, 113.557130)
-            //重複のため削除　self.mapView.addAnnotation(annotation)
             //ピンのタイトルを指定する
-            //重複のため削除　let annotation = MKPointAnnotation()
             annotation.coordinate = CLLocationCoordinate2DMake(22.153250, 113.557130)
             annotation.title = "GALO (ポルトガル料理)"
             annotation.subtitle = "澳門氹仔官也街45号地下"
