@@ -18,8 +18,6 @@ class ThirdViewController: UIViewController, GADBannerViewDelegate {
     let SimulatorTest:Bool = false
     
     //◯秒後に画面遷移する//
-    //var timer:NSTimer = NSTimer()
-    // ↓以下に訂正
     var timer: NSTimer?
 
     
