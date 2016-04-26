@@ -3,7 +3,7 @@
 //  1031macauojisanTests
 //
 //  Created by 20150301 on 2015/10/31.
-//  Copyright © 2015年 YasuhiroSugisawa. All rights reserved.
+//  Copyright © 2015年 ******. All rights reserved.
 //
 
 import XCTest
