@@ -3,7 +3,7 @@
 //  1031macauojisan
 //
 //  Created by 20150301 on 2015/11/02.
-//  Copyright © 2015年 YasuhiroSugisawa. All rights reserved.
+//  Copyright © 2015年 ******. All rights reserved.
 //
 
 import UIKit
@@ -12,8 +12,8 @@ import GoogleMobileAds
 class ThirdViewController: UIViewController, GADBannerViewDelegate {
     
     // AdMob ID を入れてください
-    let AdMobID = "ca-app-pub-8390957284099917/6052815383"
-    let TEST_DEVICE_ID = "f8b5cd15da8f02822ab74d3e2aaaf7e1"
+    let AdMobID = "ca-app-pub-****************************"
+    let TEST_DEVICE_ID = "********************************"
     let AdMobTest:Bool = true
     let SimulatorTest:Bool = false
     
@@ -81,12 +81,6 @@ class ThirdViewController: UIViewController, GADBannerViewDelegate {
         
         //タイマー　3秒後にMapViewCtrに画面遷移
         timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ThirdViewController.changeView), userInfo: ["value": 0], repeats: false)
-        
-        ///通知を送る側///
-        //NSNotificationのインスタンス作成。["value":0]という辞書型のデータを持たせる。
-        //let n : NSNotification = NSNotification(name: "dummy", object: self, userInfo: ["value": 0])
-        //通知を送る
-        //NSNotificationCenter.defaultCenter().postNotification(n)
         
         
         //NSTimer画面遷移時にViewController間でのデータ転送
